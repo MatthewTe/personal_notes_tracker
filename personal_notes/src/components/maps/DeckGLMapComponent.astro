@@ -1,0 +1,7 @@
+---
+const allPosts = Object.values(import.meta.glob('../../pages/posts/*.md', { eager: true}))
+---
+<div id="world_map"></div>
+<script>
+    import "./deckgl_map.js"
+</script>
