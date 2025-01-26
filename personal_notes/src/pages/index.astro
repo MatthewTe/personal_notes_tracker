@@ -1,5 +1,6 @@
 ---
-import D3MapComponent from '../components/maps/D3MapComponent.astro';
+import '../styles/global.css';
+import LeafletMapComponent from '../components/maps/LeafletMapComponent.astro';
 ---
 <html lang="en">
   <head>
@@ -7,7 +8,9 @@ import D3MapComponent from '../components/maps/D3MapComponent.astro';
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-	<div>Hello World this is my astro app. The d3 map will go here:</div>
-	<D3MapComponent></D3MapComponent>
+    <h1>My writings and technical demos</h1> 
+    <p>Click on a country to see all of the posts I've made about it.</p>
+	  <LeafletMapComponent></LeafletMapComponent>
+    <p>Or navigate to any of the non-country related tags below</p>
   </body>
 </html>

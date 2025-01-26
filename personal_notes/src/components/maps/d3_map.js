@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", async (e) => {
     }
 
     function clicked(event, d) {
+
+        console.log(d)
+
         const [[x0, y0], [x1, y1]] = path.bounds(d);
         event.stopPropagation();
         countries.transition().style("fill", null);
